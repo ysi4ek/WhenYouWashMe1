@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:gravity="center|left"
+        android:paddingLeft="25dp"
+        android:textSize="18sp"
+        tools:text="Fri. \n21.04" />
+
+    <ImageView
+        android:id="@+id/weatherImg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/temperature"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:gravity="center|right"
+        android:paddingRight="5dp"
+        android:textSize="18sp"
+        tools:text="Sunny \n+55°C"
+        />
+
+</LinearLayout>

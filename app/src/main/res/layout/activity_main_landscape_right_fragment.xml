@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/landscapeRightFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jek.whenyouwashme.activity.WeatherForecastActivity">
+
+    <View
+        android:id="@+id/horizontal_anchor"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/setWashingText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:textSize="26sp"
+        app:layout_heightPercent="44%"
+        tools:text="Nice weather \nto wash a car" />
+
+    <TextView
+        android:id="@+id/textTimeAftertLastCarWash"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/setWashingText"
+        android:layout_toLeftOf="@id/horizontal_anchor"
+        android:gravity="center|right"
+        android:paddingRight="11dp"
+        android:text="Time after last \ncar wash"
+        android:textSize="22sp"
+        app:layout_heightPercent="28%" />
+
+    <TextView
+        android:id="@+id/textSetTimeAfterLastCarWash"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/textTimeAftertLastCarWash"
+        android:layout_toLeftOf="@id/horizontal_anchor"
+        android:gravity="center|left"
+        android:paddingLeft="11dp"
+        android:textSize="40sp"
+        app:layout_heightPercent="28%"
+        tools:text="3d. 06h." />
+
+    <Button
+        android:id="@+id/buttonNearestCarWashes"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/setWashingText"
+        android:layout_toRightOf="@id/horizontal_anchor"
+        android:text="Nearest \ncar washes"
+        android:textSize="18sp"
+        app:layout_heightPercent="28%" />
+
+    <Button
+        android:id="@+id/buttonWashed"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/buttonNearestCarWashes"
+        android:layout_toRightOf="@id/horizontal_anchor"
+        android:text="Washed"
+        android:textSize="22sp"
+        app:layout_heightPercent="28%" />
+
+
+</android.support.percent.PercentRelativeLayout>

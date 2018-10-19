@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jek.whenyouwashme.activity.WeatherForecastActivity">
+
+   <!-- <View
+        android:id="@+id/horizontal_anchor"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        tools:text="Current location: Minsk"
+        android:gravity="center"
+        android:textSize="22sp"
+        app:layout_heightPercent="6%" />
+
+    <TextView
+        android:id="@+id/dateToday"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/location"
+        android:gravity="center"
+        android:textSize="30sp"
+        app:layout_heightPercent="6%"
+        tools:text="Thursday, 20 april, 16:45" />
+
+    <ImageView
+        android:id="@+id/weatherBigPicture"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/dateToday"
+        android:layout_toLeftOf="@id/horizontal_anchor"
+        android:src="@mipmap/ic_launcher"
+        app:layout_heightPercent="28%" />
+
+    <TextView
+        android:id="@+id/temperature"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/dateToday"
+        android:layout_toRightOf="@id/horizontal_anchor"
+        android:gravity="center|left"
+        android:textSize="65sp"
+        app:layout_heightPercent="14%"
+        tools:text="+35°C" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/temperature"
+        android:layout_toRightOf="@id/horizontal_anchor"
+        android:gravity="center|left"
+        android:paddingBottom="10sp"
+        android:textSize="18sp"
+        app:layout_heightPercent="14%"
+        tools:text="Wind 3 m/s, S \nPressure 741 mmHg" />
+
+    <LinearLayout
+        android:id="@+id/smallWeatherWidgets"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/weatherBigPicture"
+        android:orientation="horizontal"
+        app:layout_heightPercent="24%">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25">
+
+            <include
+                android:id="@+id/widget1"
+                layout="@layout/weather_widget_small" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25">
+
+            <include
+                android:id="@+id/widget2"
+                layout="@layout/weather_widget_small" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25">
+
+            <include
+                android:id="@+id/widget3"
+                layout="@layout/weather_widget_small" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25">
+
+            <include
+                android:id="@+id/widget4"
+                layout="@layout/weather_widget_small" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/setWashingText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/smallWeatherWidgets"
+        android:gravity="center"
+        android:textSize="26sp"
+        app:layout_heightPercent="10%"
+        tools:text="Nice weather to wash a car" />
+
+    <TextView
+        android:id="@+id/textTimeAftertLastCarWash"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/setWashingText"
+        android:layout_toLeftOf="@id/horizontal_anchor"
+        android:gravity="center|right"
+        android:paddingRight="11dp"
+        android:text="Time after last \ncar wash"
+        android:textSize="24sp"
+        app:layout_heightPercent="13%" />
+
+    <TextView
+        android:id="@+id/textSetTimeAfterLastCarWash"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/setWashingText"
+        android:layout_toRightOf="@id/horizontal_anchor"
+        android:gravity="center|left"
+        android:paddingLeft="11dp"
+        android:textSize="40sp"
+        app:layout_heightPercent="13%"
+        tools:text="3d. 06h." />
+
+    <Button
+        android:id="@+id/buttonNearestCarWashes"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/textSetTimeAfterLastCarWash"
+        android:layout_toLeftOf="@id/horizontal_anchor"
+        android:text="Nearest \ncar washes"
+        android:textSize="22sp"
+        app:layout_heightPercent="13%" />
+
+    <Button
+        android:id="@+id/buttonWashed"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/textTimeAftertLastCarWash"
+        android:layout_toRightOf="@id/horizontal_anchor"
+        android:text="Washed"
+        android:textSize="22sp"
+        app:layout_heightPercent="13%" />-->
+
+</android.support.percent.PercentRelativeLayout>

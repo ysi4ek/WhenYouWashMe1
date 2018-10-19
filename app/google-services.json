@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "566995281918",
+    "firebase_url": "https://wen-you-wash-me.firebaseio.com",
+    "project_id": "wen-you-wash-me",
+    "storage_bucket": "wen-you-wash-me.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:566995281918:android:ca75c306f0e609e5",
+        "android_client_info": {
+          "package_name": "com.example.jek.whenyouwashme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "566995281918-0av5ungnbijrskbblv55h43sbvtm2jh9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jek.whenyouwashme",
+            "certificate_hash": "6545824bda3b4d686434b263a60ee98f7fe6718c"
+          }
+        },
+        {
+          "client_id": "566995281918-6evf3n2dtqhsgh997kco123tdg03c3bb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jek.whenyouwashme",
+            "certificate_hash": "660bcf89fa4dde69fa1e570fff07a3acc624be65"
+          }
+        },
+        {
+          "client_id": "566995281918-lb0drmnansi1n8ibvqck0banbj98rla2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2oh4nlZrxI7UlWEibQNkty8uyLe8jw40"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "566995281918-lb0drmnansi1n8ibvqck0banbj98rla2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,9 @@
+diff a/app/src/main/AndroidManifest.xml b/app/src/main/AndroidManifest.xml	(rejected hunks)
+@@ -35,6 +35,7 @@
+         <activity android:name=".activity.CameraActivity" />
+ 
+         <service android:name=".services.LocationService" />
++        <service android:name=".services.WeatherForecastService" />
+ 
+         <provider
+             android:name="android.support.v4.content.FileProvider"

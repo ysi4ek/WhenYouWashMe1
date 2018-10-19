@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar"
+    style="@style/Base.TextAppearance.Widget.AppCompat.Toolbar.Title"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:title="@string/app_name">
+
+
+    <ImageView
+        android:id="@+id/settings_toolbar"
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_settings_black_48px" />
+
+    <TextView
+        android:id="@+id/location_toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:text="Minsk"
+        android:textColor="#cecece"
+        android:textSize="40sp" />
+
+    <ImageView
+        android:id="@+id/refresh_toolbar"
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="end"
+        android:background="@color/colorPrimaryDark"
+        android:src="@drawable/ic_autorenew_black_48px"
+        android:textSize="22sp" />
+</android.support.v7.widget.Toolbar>
